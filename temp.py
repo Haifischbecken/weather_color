@@ -59,7 +59,7 @@ def quantilizer(quantiles, x):
 
 
 # print(df)
-df = df[datetime(2022, 1, 1) : datetime(2022, 12, 31)]
+df = df[datetime(2022, 1, 1) :]
 df["color"] = df["TT_TU"].apply(lambda x: quantilizer(quantiles, x))
 print(quantiles)
 print(df)
